@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Conctáctenos</title>
+    <link rel="stylesheet" href="css/main.css">
+</head>
+
+<body>
+    <div class="row p-2 br-10" id="contenedor-formulario">
+        <div class="flex align-items-center justify-content-center w-50">
+            <div>
+                <img width="500px" src="assets/contacto.webp" alt="" srcset="" class="img-fluid br-10">
+                <small>Para más información, visite nuestra <a href="https://sociuscorp.com/" target="_blank">página web</a> </small>
+            </div>          
+        </div>
+
+        <div class="py-1 w-50" id="contenedor-formulario">
+
+            <h1 class="mb-0 mt-0">Contáctenos</h1>
+            <p>Estamos aquí para ayudar. Nuestro equipo se pondrá en contacto con usted en un plazo de 30 minutos para
+                responder todas sus preguntas.</p>
+
+            <div class="flex">
+                <label for="nombre">Nombres <strong class="text-danger">*</strong></label>
+                <input type="text" class="w-100 form-control" name="nombre" id="">
+            </div>
+
+            <div class="flex mt-1">
+                <label for="apellido">Apellidos <strong class="text-danger">*</strong></label>
+                <input type="text" class="w-100 form-control" name="apellido" id="">
+            </div>
+
+            <div class="flex mt-1">
+                <label for="telefono">Teléfono <strong class="text-danger">*</strong></label>
+                <input type="number" class="w-100 form-control" name="telefono" id="">
+            </div>
+
+            <div class="flex mt-1">
+                <label for="correo">Correo electrónico <strong class="text-danger">*</strong></label>
+                <input type="email" class="w-100 form-control" name="correo" id="">
+            </div>
+
+            <div class="flex mt-1">
+                <label for="pais">País <strong class="text-danger">*</strong></label>
+                <select name="pais" class="w-100 form-control" id="pais">
+                    <option value="1">Argentina</option>
+                    <option value="2">Bolivia</option>
+                    <option value="3">Chile</option>
+                    <option value="4">Colombia</option>
+                    <option value="5">México</option>
+                    <option value="6" selected>Perú</option>
+                    <option value="7">Uruguay</option>                    
+                </select>
+            </div>
+
+            <button class="mt-1 btn btn-primary" onclick="enviar()">Enviar</button>
+        </div>
+
+
+
+    </div>
+    <script src="js/main.js"></script>
+</body>
+</html>
